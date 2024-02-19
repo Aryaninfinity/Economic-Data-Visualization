@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economic Data Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Economic Data Visualization</h1>
+    <!-- Form for selecting country and indicator -->
+    <form id="dataForm">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" value="US">
+        <label for="indicator">Indicator Code:</label>
+        <input type="text" id="indicator" name="indicator" value="NY.GDP.MKTP.CD">
+        <button type="button" onclick="updateChart()">Update Chart</button>
+    </form>
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
